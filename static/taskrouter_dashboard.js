@@ -84,6 +84,7 @@ var taskrouterDashboard = new Vue({
           var tasks = response.data;
           console.log(tasks);
           for (var i in tasks) {
+            console.log(i);
             task = {};
             task['taskSid'] = tasks[i]['TaskSid'];
             task['from'] = tasks[i]['name'].charAt(0).toUpperCase() + tasks[i]['name'].slice(1);
