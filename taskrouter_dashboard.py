@@ -91,7 +91,7 @@ def taskrouter_event():
 
 @app.route('/taskrouter_tasks', methods=['GET'])
 def taskrouter_tasks():
-    current_tasks = client.taskrouter.workspaces(twilio_workspace_sid).tasks.list()
+    current_tasks = client.taskrouter.workspaces(twilio_workspace_sid).tasks.list(ordering='Priority:desc,DateCreated:asc')
     task_model = {}
     tasks_results = []
     for task in current_tasks:
