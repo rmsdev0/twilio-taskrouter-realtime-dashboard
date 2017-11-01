@@ -64,7 +64,8 @@ def sync_taskrouter_statistics():
     sync_document = 'SyncTaskRouterStats'
     url = 'https://sync.twilio.com/v1/Services/' + twilio_sync_service_id + '/Documents/' + sync_document
     response = requests.request("POST", url, data=new_data, auth=HTTPBasicAuth(twilio_account_sid, twilio_auth_token))
-    print str((response.text)) + ' task data'
+    print(response.text)
+    print 'task data'
     return (response.text)
 
 @app.route('/taskrouter_event', methods=['POST'])
