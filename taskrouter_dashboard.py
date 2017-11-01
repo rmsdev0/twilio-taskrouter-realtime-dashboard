@@ -116,6 +116,7 @@ def taskrouter_tasks():
         tasks_results.append(dict(task_model))
     result = json.dumps(tasks_results)
     print(result)
+    print('task data')
     return result
 
 @app.route('/sync_taskrouter_tasks', methods=['GET'])
