@@ -70,7 +70,7 @@ var taskrouterDashboard = new Vue({
           self.workers = worker;
         })
         .catch(function (error) {
-          console.log(error);
+          console.log(error); 
         })
     },
     fetchTasks: function () {
@@ -83,6 +83,7 @@ var taskrouterDashboard = new Vue({
           self.taskList = [];
           var tasks = response.data;
           console.log(tasks);
+          console.log('task list');
           for (var i in tasks) {
             task = {};
             task['taskSid'] = tasks[i]['TaskSid'];
