@@ -1,7 +1,7 @@
 var taskrouterDashboard = new Vue({
   el: '#taskrouterDashboard',
   data: {
-    headerMessage: 'TaskRouter Real-Time Dashboard',
+    headerMessage: 'Vizy Contact Client Dashboard',
     loggedUser: "ameer@twilio.com",
     userAuthenticated: false,
     syncStatus: "Disconnected",
