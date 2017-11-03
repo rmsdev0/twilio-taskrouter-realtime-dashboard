@@ -31,7 +31,7 @@ var taskrouterDashboard = new Vue({
     taskList: [],
     taskWorker: {'1': '1'},
     taskCurrentSteps: {
-      "canceled": 0,
+      "Abandoned": 0,
       "pending": 1,
       "reserved": 2,
       "assigned": 3,
