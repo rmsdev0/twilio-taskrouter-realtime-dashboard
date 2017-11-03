@@ -31,11 +31,11 @@ var taskrouterDashboard = new Vue({
     taskList: [],
     taskWorker: {'1': '1'},
     taskCurrentSteps: {
-      "Abandoned": 0,
+      "canceled": 0,
       "pending": 1,
-      "reserved": 2,
-      "assigned": 3,
-      "completed": 4
+      //"reserved": 2,
+      "assigned": 2,
+      "completed": 3
     }
   },
   methods: {

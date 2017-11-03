@@ -153,7 +153,7 @@
                       <td>
                         <el-steps :space="100" :active=taskCurrentStep(task.taskStatus) title="Task Status">
                             <el-step title="Created"></el-step>
-                            <el-step title="Reserved"></el-step>
+                         <!--   <el-step title="Reserved"></el-step> -->
                             <el-step title="In-Progress"></el-step>
                             <el-step :status="task.successStatus" title="Completed"></el-step>
                             <el-step v-if="task.taskStatus == 'canceled'"  :status="task.cancelStatus" title="Abandoned"></el-step>
