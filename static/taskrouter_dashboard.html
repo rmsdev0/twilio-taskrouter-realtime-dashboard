@@ -156,7 +156,7 @@
                             <el-step title="Reserved"></el-step>
                             <el-step title="In-Progress"></el-step>
                             <el-step :status="task.successStatus" title="Completed"></el-step>
-                            <el-step v-if="task.taskStatus == 'canceled'"  :status="task.cancelStatus" title="Canceled"></el-step>
+                            <el-step v-if="task.taskStatus == 'canceled'"  :status="task.cancelStatus" title="Abandoned"></el-step>
                         </el-steps>
                       </td>
                       <td class="center aligned">
